@@ -1,81 +1,115 @@
-🐾 Pet&Style – Site de Produtos para Pets
-Pet&Style é um projeto de site fictício desenvolvido com HTML5 e Tailwind CSS, voltado para a exibição de produtos, depoimentos de clientes e informações de contato de um pet shop moderno e estiloso.
+# 🐾 Pet\&Style – Site de Produtos para Pets
 
-O layout foi pensado para ser responsivo, modular e com foco na experiência do usuário, utilizando componentes visuais claros, acessíveis e otimizados para dispositivos móveis.
+**Pet\&Style** é um projeto de site fictício desenvolvido com **HTML5** e **Tailwind CSS**, voltado para a exibição de produtos, depoimentos de clientes e informações de contato de um pet shop moderno e estiloso.
 
-🔧 Tecnologias Utilizadas
-HTML5
+O layout foi pensado para ser **responsivo**, **modular** e com foco na **experiência do usuário**, utilizando componentes visuais claros, acessíveis e otimizados para dispositivos móveis.
 
-Tailwind CSS v3
+---
 
-Layout Flex/Grid Responsivo
+## 🔧 Tecnologias Utilizadas
 
-Sem frameworks JavaScript (apenas frontend estático)
+* HTML5
+* Tailwind CSS v3
+* Layout Flex/Grid Responsivo
+* Sem frameworks JavaScript (apenas frontend estático)
 
-🧱 Estrutura do Site
-🔝 Cabeçalho (Header)
-Contém o logotipo e o nome da loja.
+---
 
-Menu de navegação com links âncora para rolar suavemente até as seções: Início, Produtos, Depoimentos e Contato.
+## 🧱 Estrutura do Site
 
-Totalmente responsivo com flex adaptável a mobile e desktop.
+### 🔝 Cabeçalho (Header)
 
-🐶 Seção Hero (Início)
-Frase de impacto com texto grande, fonte destacada e cores da identidade visual (tons de âmbar).
+* Contém o logotipo e o nome da loja.
+* Menu de navegação com links âncora para rolar suavemente até as seções: Início, Produtos, Depoimentos e Contato.
+* Totalmente responsivo com `flex` adaptável a mobile e desktop.
 
-Imagem à direita que se adapta para cima no mobile.
+---
 
-Apresentação da missão da marca: conforto, estilo e amor pelos pets.
+### 🐶 Seção Hero (Início)
 
-🛍️ Seção de Produtos
-Grade com 4 produtos distintos:
+* Frase de impacto com texto grande, fonte destacada e cores da identidade visual (tons de âmbar).
+* Imagem à direita que se adapta para cima no mobile.
+* Apresentação da missão da marca: conforto, estilo e amor pelos pets.
 
-Cama para pets
+---
 
-Ração personalizada
+### 🛍️ Seção de Produtos
 
-Acessórios fashion
+* Grade com 4 produtos distintos:
 
-Plano de saúde pet
+  * Cama para pets
+  * Ração personalizada
+  * Acessórios fashion
+  * Plano de saúde pet
+* Cada item exibe: imagem, nome, descrição, preço e botão de ação.
+* Estilizado com `rounded`, `shadow`, `hover` e `bg-amber-*`.
 
-Cada item exibe: imagem, nome, descrição, preço e botão de ação.
+---
 
-Estilizado com rounded, shadow, hover e bg-amber-*.
+### 💬 Seção de Depoimentos
 
-💬 Seção de Depoimentos
-Seção em grid que adapta entre 1 ou 2 colunas conforme o tamanho da tela.
+* Seção em grid que adapta entre 1 ou 2 colunas conforme o tamanho da tela.
+* Cada depoimento é exibido em um card com:
 
-Cada depoimento é exibido em um card com:
+  * Foto do cliente (circular, com sombra e borda)
+  * Nome do cliente
+  * Texto do depoimento
+* Visual leve e moderno com `bg-gray-100` e `shadow-md`.
 
-Foto do cliente (circular, com sombra e borda)
+---
 
-Nome do cliente
+### 📞 Seção de Contato
 
-Texto do depoimento
+* Bloco centralizado com formulário simples contendo:
 
-Visual leve e moderno com bg-gray-100 e shadow-md.
+  * Nome
+  * E-mail
+  * Telefone
+  * Assunto
+* Botão estilizado com hover.
+* Ideal para clientes entrarem em contato com suporte ou enviarem pedidos.
 
-📞 Seção de Contato
-Bloco centralizado com formulário simples contendo:
+---
 
-Nome
+### 👣 Rodapé (Footer)
 
-E-mail
+* Informações de direitos autorais.
+* Seção de contatos com links fictícios para redes sociais.
+* Layout com `flex`, adaptável a colunas ou linhas.
 
-Telefone
+---
 
-Assunto
+## 📱 Responsividade
 
-Botão estilizado com hover.
+Todo o site utiliza utilitários do Tailwind CSS como `md:`, `sm:`, `flex-col`, `grid-cols`, `gap-*` e `px-*` para garantir uma experiência fluida em telas pequenas, médias e grandes.
 
-Ideal para clientes entrarem em contato com suporte ou enviarem pedidos.
+---
 
-👣 Rodapé (Footer)
-Informações de direitos autorais.
+## 📂 Organização de Arquivos (Exemplo)
 
-Seção de contatos com links fictícios para redes sociais.
+```plaintext
+/
+├── index.html
+├── src/
+│   └── output.css       # Arquivo Tailwind compilado
+├── img/
+│   ├── logopetshop.png
+│   ├── camapet.jpg
+│   ├── racaopet.jpg
+│   ├── acessoriopet.jpg
+│   ├── planodesaudepet.jpg
+│   └── Windows_10_Default_Profile_Picture.svg.png
+```
 
-Layout com flex, adaptável a colunas ou linhas.
+---
 
-📱 Responsividade
-Todo o site utiliza utilitários do Tailwind CSS como md:, sm:, flex-col, grid-cols, gap-* e px-* para garantir uma experiência fluida em telas pequenas, médias e grandes.
+## 🚀 Como usar
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/pet-style.git
+   ```
+2. Abra `index.html` em um navegador.
+3. Certifique-se de que o Tailwind foi compilado corretamente no `output.css`.
+
