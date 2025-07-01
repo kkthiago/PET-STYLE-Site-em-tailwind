@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet&Style</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- Cabeçalho (header) -->
+    <header id="cabeçalho" class="bg-amber-200 py-5 px-4 sm:px-6">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <!-- Logo + Título -->
+            <div class="flex items-center justify-center gap-4 md:gap-6">
+                <img class="w-24 md:w-20" src="img/logopetshop.png" alt="imagem logo">
+                <p class="text-amber-800 font-bold text-2xl sm:text-3xl md:text-5xl text-center md:text-left">PET & STYLE</p>
+            </div>
+            <!-- Menu -->
+            <nav id="menu" class="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-6">
+                <a href="#Início" class="text-md text-amber-700 hover:font-extrabold md:text-lg">Início</a>
+                <a href="#produtos" class="text-md text-amber-700 hover:font-extrabold md:text-lg">Produtos</a>
+                <a href="#depoimentos" class="text-md text-amber-700 hover:font-extrabold md:text-lg">Depoimentos</a>
+                <a href="#contato" class="text-md text-amber-700 hover:font-extrabold md:text-lg">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero (início) -->
+    <section id="Início" class="backgroundtheme rounded-4xl w-full max-w-screen-xl flex flex-col-reverse items-center justify-start gap-2 px-4 py-10 my-3 mx-auto  md:flex-row md:items-center md:justify-between">
+        <!-- Texto hero -->
+        <div class="text-center w-full md:text-left md:w-[60%]">
+            <p class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-800 mb-4 sm:mb-6">
+                Muito estilo, amor e conforto para seu pet!
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-black">
+                Conheça a nossa linha exclusiva de produtos pensada com carinho para transformar o dia a dia do seu pet. Aqui na Pet&Style, unimos estilo, conforto e qualidade em cada item da nossa seleção. De caminhas macias que proporcionam o descanso ideal até acessórios charmosos que refletem a personalidade do seu melhor amigo — tudo foi escolhido para deixar seu pet ainda mais feliz, elegante e cheio de atitude!
+            </p>
+        </div>
+
+        <!-- Imagem hero -->
+        <div class="w-full flex justify-center md:w-[35%]">
+            <img src="https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg"
+                class="w-52 max-w-xs rounded-2xl border-1 border-amber-800 shadow-lg sm:w-64 md:w-full sm:max-w-sm"
+                alt="imagem_inicio_hero">
+        </div>
+    </section>
+
+    <hr class="border-t border-amber-400 shadow-2xl w-full my-8">
+    
+    <!-- Produtos -->
+    <section id="produtos" class="backgroundtheme rounded-4xl flex flex-col items-center justify-center gap-3 w-full px-4 py-10 mx-auto md:flex-row md:items-center md:justify-between md:px-12">
+        <p class="text-amber-800 text-center text-4xl font-bold"> NOSSOS PRODUTOS:</p>
+        <div class="grid grid-cols-1 gap-6 place-items-center items-center justify-center md:grid-cols-4">
+            <!-- Itens da loja -->
+            <div class="bg-amber-200 rounded-2xl py-5 px-4">
+                <img src="img\camapet.jpg" class="w-70 max-w-xs rounded-2xl shadow-lg sm:w-64 md:w-full sm:max-w-sm">
+                <p class="text-center text-2xl sm:text-3xl md:text-2xl font-bold my-3 sm:mb-4">Cama para pets</p>
+                <p class="text-center text-xl sm:text-lg md:text-base">Conforto garantido para seu pet descansar.</p>
+                <p class="text-amber-800 font-bold text-center text-xl sm:text-lg md:text-lg">R$ 120,00</p>
+                <button class="text-white bg-amber-700 block mx-auto rounded-full shadow-lg py-2 px-2 hover:bg-amber-800">COMPRAR</button>
+            </div> 
+            <div class="bg-amber-200 items-center rounded-2xl py-5 px-4">
+                <img src="img\racaopet.jpg" class="w-70 max-w-xs rounded-2xl shadow-lg sm:w-64 md:w-full sm:max-w-sm">
+                <p class="text-center text-2xl sm:text-3xl md:text-2xl font-bold my-3 sm:mb-4">Ração para pets</p>
+                <p class="text-center text-xl sm:text-lg md:text-base">Uma ração especialmente feita pra seu pet, feita de alimentos saudáveis e frescos.</p>
+                <p class="text-amber-800 font-bold text-center text-xl sm:text-lg md:text-lg">R$ 15,00 / Kgs</p>
+                <button class="text-white bg-amber-700 block mx-auto rounded-full shadow-lg py-2 px-2 hover:bg-amber-800">COMPRAR</button>
+            </div>
+            <div class="bg-amber-200 rounded-2xl py-5 px-4">
+                <img src="img\acessoriopet.jpg" class="w-70 max-w-xs rounded-2xl shadow-lg sm:w-64 md:w-full sm:max-w-sm">
+                <p class="text-center text-2xl sm:text-3xl md:text-2xl font-bold my-3 sm:mb-4">Acessórios para pet</p>
+                <p class="text-center text-xl sm:text-lg md:text-base">Escolha entre uma variedade imensa de acessórios fashions para seu amigãozão.</p>
+                <p class="text-amber-800 font-bold text-center text-xl sm:text-lg md:text-lg">Entre R$ 20,00 á R$ 60,00</p>
+                <button class="text-white bg-amber-700 block mx-auto rounded-full shadow-lg py-2 px-2 hover:bg-amber-800">ESCOLHER</button>
+            </div> 
+            <div class="bg-amber-200 rounded-2xl py-5 px-4">
+                <img src="img\planodesaudepet.jpg" class="w-70 max-w-xs rounded-2xl shadow-lg sm:w-64 md:w-full sm:max-w-sm">
+                <p class="text-center text-2xl sm:text-3xl md:text-2xl font-bold my-3 sm:mb-4">Plano de saúde pet</p>
+                <p class="text-center text-xl sm:text-lg md:text-base">Para seu pet sempre estar saúdavel para brincar o dia inteiro.</p>
+                <p class="text-amber-800 font-bold text-center text-xl sm:text-lg md:text-lg">R$ (A determinar)</p>
+                <button class="text-white bg-amber-700 block mx-auto rounded-full shadow-lg py-2 px-2 hover:bg-amber-800">Agendar uma consulta</button>
+            </div> 
+        </div>
+    </section>
+
+    <hr class="border-t border-amber-400 shadow-2xl w-full my-8">
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="w-full py-16 px-4 mb-5 md:px-12">
+    <p class="text-amber-800 text-center text-4xl font-bold mb-10">DEPOIMENTOS:</p>
+
+    <div class="grid gap-8 max-w-5xl mx-auto md:grid-cols-1 lg:grid-cols-2">
+        <!-- Card 1 -->
+        <div class="bg-gray-100 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-md">
+        <img src="img/Windows_10_Default_Profile_Picture.svg.png" alt="Foto do usuário"
+            class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md">
+        <div class="text-center md:text-left">
+            <p class="text-xl font-semibold text-gray-800">Júnior</p>
+            <p class="text-gray-600 mt-2">"O serviço foi excelente e superou minhas expectativas. Recomendo muito!"</p>
+        </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-100 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-md">
+        <img src="img/Windows_10_Default_Profile_Picture.svg.png" alt="Foto do usuário"
+            class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md">
+        <div class="text-center md:text-left">
+            <p class="text-xl font-semibold text-gray-800">Rodolfo</p>
+            <p class="text-gray-600 mt-2">"Eu e meu cãozinho adoramos muito a loja! NOTA 10."</p>
+        </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-100 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-md">
+        <img src="img/Windows_10_Default_Profile_Picture.svg.png" alt="Foto do usuário"
+            class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md">
+        <div class="text-center md:text-left">
+            <p class="text-xl font-semibold text-gray-800">Barbará</p>
+            <p class="text-gray-600 mt-2">"Gostei bastante da entrega e dos produtos comprados, ganharam outro cliente fiel."</p>
+        </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-gray-100 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-md">
+        <img src="img/Windows_10_Default_Profile_Picture.svg.png" alt="Foto do usuário"
+            class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md">
+        <div class="text-center md:text-left">
+            <p class="text-xl font-semibold text-gray-800">Bruno</p>
+            <p class="text-gray-600 mt-2">"Gostei bastante dos produtos, vou comprar mais com vocês."</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <hr class="border-t border-amber-400 shadow-2xl w-full my-8">
+
+    <!-- Contato-->
+    <section id="contato" class="bg-amber-200 rounded-4xl w-full flex flex-col items-center justify-center shadow-lg mt-4 mb-4 mx-auto px-3 py-10">
+        <p class="text-amber-800 text-center text-2xl font-bold md:text-4xl">CONTATOS:</p>
+        <div class="bg-orange-300 rounded-2xl p-6 my-5 flex flex-col items-center shadow-md">
+            <p class="text-center text-lg font-bold mb-3 md:text-xl">Contatos para suporte, críticas, pedidos e etc.</p>
+            <input type="text" placeholder="Nome:" name="nome" class="border-2 border-b-black p-3 my-1">
+            <input type="email" placeholder="Email:" name="email" class="border-2 border-b-black p-3 my-1">
+            <input type="tel" placeholder="Telefone/Celular:" name="celular" class="border-2 border-b-black p-3 my-1">
+            <input type="text" placeholder="Assunto a ser tratado:" name="assunto" class="border-2 border-b-black p-8 my-3">
+            <button class="text-white bg-amber-700 block mx-auto rounded-full shadow-lg py-5 px-12 hover:bg-amber-800">ENVIAR</button>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-gradient-to-b from-gray-400 to-gray-500 flex flex-col justify-between items-center mx-auto px-8 gap-1 w-full h-40 md:flex-row">
+        <p class="text-left text-2xl grow-2 md:text-xl "> PET & STYLE ©Todos direitos reservados</p>
+        <p class="text-center text-2xl md:text-xl "> CONTATOS:</p>
+        <div class="flex flex-col ml-4 gap-3">
+            <a href="#" class="hover:font-bold"><p class="text-center text-base "> Instagram</p></a>
+            <a href="#" class="hover:font-bold"><p class="text-center text-base "> Facebook</p></a>
+            <a href="contato" class="hover:font-bold"><p class="text-center text-base "> Contato</p></a>
+        </div>
+
+    </footer>
+</body>
+</html>
